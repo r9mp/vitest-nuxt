@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest --run --dir test --reporter verbose"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils-edge": "^3.0.0-rc.12-27736489.2e080c2",
+    "@vue/test-utils": "^2.0.2",
+    "jsdom": "^20.0.0",
+    "nuxt": "3.0.0-rc.11",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.7",
+    "vite-plugin-vue-type-imports": "^0.2.2",
+    "vitest": "^0.23.4"
+  }
+}
