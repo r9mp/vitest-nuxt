@@ -8,6 +8,7 @@ import VueTypeImports from "vite-plugin-vue-type-imports";
 export default defineConfig({
   plugins: [
     Vue(),
+    VueTypeImports(),
     AutoImport({
       imports: ["vue"],
     }),
@@ -16,7 +17,6 @@ export default defineConfig({
       directoryAsNamespace: true, // components/nested/Child.vue => <NestedChild />
       // directoryAsNamespace: false, // components/nested/NestedChild.vue => <NestedChild />
     }),
-    VueTypeImports(),
   ],
   test: {
     globals: true,

@@ -2855,6 +2855,13 @@ magic-string@^0.26.2, magic-string@^0.26.3:
   dependencies:
     sourcemap-codec "^1.4.8"
 
+magic-string@^0.26.4:
+  version "0.26.5"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.26.5.tgz#3ceb5c60f546ba4e21e3865ab8de4d32bd8ed07f"
+  integrity sha512-yXUIYOOQnEHKHOftp5shMWpB9ImfgfDJpapa38j/qMtTj5QHWucvxP4lUtuRmHT9vAzvtpHkWKXW9xBwimXeNg==
+  dependencies:
+    sourcemap-codec "^1.4.8"
+
 make-dir@^3.1.0, make-dir@~3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
@@ -4543,15 +4550,16 @@ vite-plugin-checker@^0.5.1:
     vscode-languageserver-textdocument "^1.0.1"
     vscode-uri "^3.0.2"
 
-vite-plugin-vue-type-imports@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vue-type-imports/-/vite-plugin-vue-type-imports-0.2.2.tgz#33ec2fd05e98dc4292cccddf6f228732dc3f59ec"
-  integrity sha512-FuIcEZUu5OmoRkWSf5F+bSx6hdECd2VR5aOFUbZhwNDQQwfI11Hmf7wFLseuUvVb3JhPYeJfK+FQbe6Z9Bf/pA==
+vite-plugin-vue-type-imports@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-type-imports/-/vite-plugin-vue-type-imports-0.2.3.tgz#5fc69bdbb44c61d14ae6a5f87b59faecd24e5d7e"
+  integrity sha512-mTuL1pE3UQyhedf+JylaGpSu3NFIBpqUT9MXV1zfLeg3iBy7Dp7PRonE3VE0Mfq7kMm+zn7k59BuH9VcrUkOrw==
   dependencies:
     "@babel/types" "^7.19.0"
     debug "^4.3.4"
     fast-glob "^3.2.12"
     local-pkg "^0.4.2"
+    magic-string "^0.26.4"
     picocolors "^1.0.0"
 
 "vite@^2.9.12 || ^3.0.0-0", vite@~3.1.3:

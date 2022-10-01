@@ -1,6 +1,4 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+# Vitest / Nuxt 3 / Vue 3 - Real world
 
 ## Setup
 
@@ -8,7 +6,7 @@ Make sure to install the dependencies:
 
 ```bash
 # yarn
-yarn install
+yarn
 
 # npm
 npm install
@@ -17,26 +15,31 @@ npm install
 pnpm install --shamefully-hoist
 ```
 
-## Development Server
+## Lauch the tests
 
-Start the development server on http://localhost:3000
+
+```bash
+yarn dev
+```
 
 ```bash
 npm run dev
 ```
 
-## Production
+## How it works
 
-Build the application for production:
+### Vue tests
 
-```bash
-npm run build
-```
+Vue tests are done through @vue/test-utils. It will allow you to test Vue.js components. Docs can be found [here](https://test-utils.vuejs.org/guide/).
 
-Locally preview production build:
+### Nuxt tests
 
-```bash
-npm run preview
-```
+Nuxt tests are done through @nuxt/test-utils-edge. It will allow you to test NuxtJS / routes. Doc can be found [here](https://v3.nuxtjs.org/getting-started/testing/).
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+### Vitest config
+
+Components autoload works through unplugin-vue-components/vite.
+
+The use of vue api without import (toRefs, ref, computed, watch, ...) works through unplugin-auto-import/vite.
+
+In this example, vite-plugin-vue-type-imports is used to enable you to import types and use them in your defineProps and defineEmits.
